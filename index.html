@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>prkvm project</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            /* Замените url(...) на свой фон, если нужно */
+            background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .card {
+            background: rgba(255,255,255,0.85);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 40px 32px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 12px;
+            font-size: 2.2rem;
+            color: #222;
+        }
+        p {
+            margin-bottom: 28px;
+            color: #444;
+        }
+        .buttons {
+            display: flex;
+            gap: 18px;
+            justify-content: center;
+        }
+        .btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 8px;
+            background: #66a6ff;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
+            box-shadow: 0 2px 8px rgba(102,166,255,0.15);
+        }
+        .btn:hover {
+            background: #4e8edb;
+            transform: translateY(-2px) scale(1.04);
+        }
+    </style>
 </head>
 <body>
-    <p>Hello, World!</p>
+    <div class="card">
+        <h1>prkvm</h1>
+        <p>Добро пожаловать на мой сайт-визитку!</p>
+        <div class="buttons">
+            <a class="btn" href="https://t.me/prkvm" target="_blank">Telegram</a>
+            <a class="btn" href="https://github.com/prkvm" target="_blank">GitHub</a>
+        </div>
+    </div>
 </body>
 </html>
